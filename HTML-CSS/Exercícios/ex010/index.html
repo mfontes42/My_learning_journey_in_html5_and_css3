@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-ico">
+    <title>Listas OL e UL</title>
+</head>
+<body>
+    <h1>Listas em <abbr title="HyperText Markup Language">HTML</abbr></h1>
+    <hr>
+    <h2>Listas ordenadas (ordered lists - ol)</h2>
+    <p>Vamos criar uma lista ordenada usando a tag &lt;ol&gt;:</p>
+    <ol type="1" start="10">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+    <hr>
+    <h2>Listas nao ordenadas (unordered lists - ul)</h2>
+    <p>Vamos agora criar uma lista nao ordenada usando a tag &lt;ul&gt;:</p>
+    <ul type="square">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+    <hr>
+    <h2>Listas mistas</h2>
+    <p>Tambem podemos criar listas mistas configurando listas dentro de outras listas:</p>
+    <ol type="i" start="v">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <ul type="disc">
+            <li>Item 3.1</li>
+            <li>Item 3.2</li>
+            <li>Item 3.3</li>
+        </ul>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <ol type="a">
+            <li>Item 5.a</li>
+            <li>Item 5.b</li>
+            <li>Item 5.c</li>
+        </ol>
+    </ol>
+    <hr>
+    <h2>Listas de definicao (definition lists - dl)</h2>
+    <p>Existe ainda um tipo de lista que e a de definicao que funciona como um dicionario, na verdade, vejamos abaixo usando a tag &lt;dt&gt;:</p>
+    <dl>
+        <dt>HTML</dt> <!--termo a definir-->
+        <dd>Linguagem de marcacao para criacao de sites.</dd> <!--descricai do termo-->
+        <dt>CSS</dt>
+        <dd>Linguagem de marcacao para a criacao do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programacao para a criacao de interatividade de um site.</dd>
+    </dl>
+</body>
+</html>
