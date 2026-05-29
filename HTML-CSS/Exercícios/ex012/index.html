@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="heart.ico" type="image/x-ico">
+    <title>Medias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tente abrir este site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <!--na linha abaixo, se o tamanho maximo da tela for 750px, mostrar a imagem pequena porque ha certeza de que cabe na tela.-->
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png">
+
+        <!--na linha abaixo, se o tamanho maximo da tela for 1050px, mostrar a imagem media porque ha certeza de que cabe na tela-->
+        <source media="(max-width: 1050px)" srcset="imagens/media.png">
+        
+        <!--na linha abaixo, por padrao ela vai mostrar a imagem grande.-->
+        <img src="imagens/grande.png" alt="imagem de 1000px">
+    </picture>
+</body>
+</html>

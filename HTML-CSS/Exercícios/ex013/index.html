@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="heart.ico" type="image/x-ico">
+    <title>Audios em HTML</title>
+</head>
+<body>
+    <h1>Colocando audios em sites</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <audio src="medias/audio.mp3" controls autoplay></audio>
+
+    <!--abaixo, temos a forma mais recomendada para reproduzir audios em sites porque nos permite adicionar varios formatos, mas o formato WAV nao e aconselhavel porque deixa o site pesado demais-->
+    <p>A maneira mais recomendada de adicionar audios e a que nos permite usar varios formatos de audios</p>
+    <audio controls>
+        <source src="medias/guanacast.mp3" type="audio/mpeg">
+        <source src="medias/guanacast.ogg" type="audio/ogg">
+        <source src="medias/guanacast.wav" type="audio/wav">
+        <p>Seu navegador nao tem compatibilidade com reproducao de audios</p>
+    </audio>
+</body>
+</html>

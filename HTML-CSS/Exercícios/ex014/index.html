@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="heart.ico" type="image/x-ico">
+    <title>Videos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video esta hospedado no meu proprio servidor</p>
+
+    <!--Os formatos mais aceitaveis para videos em sites sao o MP4, M4V, WEBM e OGV sendo o ultimo o menos usado. E importante colocarmos todos formatos possiveis do video, porque ha navegadores que sao compativeis com determinados formatos apenas e ao colocar os varios formatos, o mais aconselhavel. E colocar primeiro o mais pequeno (em tamanho). Ou seja, o meu site vai dizer ao navegador, independentemente de quem sejas, tente reproduzir primeiro o primeiro video, se nao fores compativel, vai tentando os outros ate achares o compativel--> 
+    <!--videos hospedados usando a tag <video>, consomem muito trafego de dado. Ou seja, videos hospedados no proprio site (localmente) vao pesar muito para o bolso do cliente, pois ha muito consumo de banda-->
+    <video width="560" height="315" poster="imagens/igris-solo-leveling-thumb.jpg" controls autoplay>
+        <source src="medias/video.mp4" type="video/mp4">
+        <source src="medias/video.webm" type="video/webm">
+        <p>Seu navegador nao tem compatibilidade com reproducao de videos</p>
+    </video>
+    <hr>
+    <h1>Inserindo videos hospedados em sites de hospedagem de videos</h1>
+    <h2>Inserindo videos do Youtube</h2>
+    <!--E recomendavel, o desenvolvedor web ter um canal no youtube aonde ele vai poder hospedar os seus videos e de la passar para o seu site, assim, se algum usuario estiver usando o seu site e abrir um video, ele estara usando os dados do youtube e nao do seu servidor, os custos ficam mais baixos. Pode-se usar tambem outros sites de hospedagem de videos, mas o google facilita um pouco na questao do algoritmo de pesquisas do googlem encontrar o teu site. O Vimeo e uma excelente opcao tambem - para pensar profissionalmente.-->
+    <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/huxt4TmR1t8?si=xh7MrAY0XfXJcf0d" title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    </iframe>
+</body>
+</html>
