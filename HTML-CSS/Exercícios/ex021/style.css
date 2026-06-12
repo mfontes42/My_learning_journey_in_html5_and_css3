@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/*
+    tudo que em HTML e id, em CSS e '#'.
+    tudo que em HTML e class, em CSS e '.'.
+*/
+
+/*
+    em um documento HTML (ou seja, por pagina) so se deve ter um unico id e para personalizar um unico elemento, eh a regra segundo a W3C. Pode se usar um id para mais de um elemento, mas isso nao e o correto. Quando se quer personalizar mais de um elemento de uma vez e usamos a class. Pode se ter multiplas classes em um unico codigo.
+*/
+
+body {
+    background-color: rgb(205, 255, 203);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+p {
+    color:black;
+    font-weight: 800;
+
+}
+h1 {
+    color: rgb(4, 109, 0);
+}
+
+#principal {
+    text-align: center;
+    background-color: rgb(68, 44, 13);
+}
+
+h2 {
+    color: rgb(73, 109, 71);
+}
+.basico {
+    color: pink;
+    
+}
+.intermediario {
+    color: blue;
+}
+.avancado {
+    color: violet;
+}
+.destaque{
+    background-color: yellow;
+}

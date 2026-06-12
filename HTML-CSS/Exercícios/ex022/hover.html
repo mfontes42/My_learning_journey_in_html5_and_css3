@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="css3.ico" type="image/x-icon">
+    <title>Exemplo de hover</title>
+    <style>
+
+        /*
+            Simbolos usados nas CSS:
+            
+            # = id;
+            . = class;
+            : = pseudo-class;
+            :: = pseudo-elemento;
+            > = flho.
+        
+        */
+
+        div > p {
+            display: none;
+        }
+        div:hover {
+            color: green;
+        }
+        div:hover > p{
+            display: block;
+            color: lime;
+            width: 200px;
+            background-color: rgb(25, 25, 21);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passar o mouse sobre o texto</p>
+    <div>
+        Passe o mouse aqui
+            <p>Texto escondido</p>
+    </div>
+    <p><a href="index.html" rel="prev"><em><strong>voltar para a pagina inicial<strong></em><a></p>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="css3.ico" type="image/x-ico">
+    <title>Fontes em CSS3</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas absolutas: cm, mm, in, px, pt, pc
+            Medidas relativas: em, ex, rem, vw, vh, %
+            16px (tamanho normal de uma fonte) geralmente = 1em (em e o tamanho normal da letra)
+            A recomendacao e sempre usar px ou em e o melhor e sempre usar o em, porque se trabalha com a percentagem do tamaho da fonte padrao, isso vai ser bom para quando estiver mostrando o site em uma tv, um telemovel, a tela de um computador, um tablet, um relogio...
+            */
+            font-size: 16px;
+            font-weight: 100;
+        }
+        h1 {
+            /* 
+            font-family: 'work sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            um shorthand (uma propriedade que permite usar varias coisas em uma unica linha) e uma maozinha, ou seja uma forma simplificada de estilizar a fonte em uma unica linha. O shorthand para a font deve ser na seguinte ordem:
+                font-style -> font-weight -> font-size -> font-family
+            */
+            font: italic bold 3em 'work sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando Com Fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos sunt ea ad modi, aliquid cum sint id adipisci blanditiis nostrum, aut esse quam deleniti ipsum eaque debitis ut, deserunt fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo at ut quibusdam saepe, necessitatibus ipsa perferendis incidunt eum officiis pariatur, animi fuga maiores aspernatur enim fugit quas libero. Eius, omnis!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos sunt ea ad modi, aliquid cum sint id adipisci blanditiis nostrum, aut esse quam deleniti ipsum eaque debitis ut, deserunt fuga.</p>
+    <h2>Subtitulo de exercicio</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos sunt ea ad modi, aliquid cum sint id adipisci blanditiis nostrum, aut esse quam deleniti ipsum eaque debitis ut, deserunt fuga.</p>
+</body>
+</html>

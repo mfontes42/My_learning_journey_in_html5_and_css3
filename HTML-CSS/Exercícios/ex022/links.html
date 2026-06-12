@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="css3.ico" type="image/x-icon">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .linksexternos {
+            color: rgb(0, 149, 255);
+            text-decoration: none;
+        }
+        .linksexternos:hover {
+            text-decoration: underline;
+            color: rgb(1, 49, 83);
+        }
+        .linksexternos:visited {
+            color: blueviolet;
+        }
+        li > p {
+            display: none;
+        }
+        /*li:hover > p {
+            display: block;
+            color: red;
+        }*/
+        .linksexternos:active {
+            color: yellowgreen;
+        }
+        .especial::after {
+            content: ' [special]';
+            color: rgb(56, 54, 54);
+            text-decoration: none;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul type="square">
+        <strong><em><li>
+            <a class="linksexternos" href="https://github.com/mfontes42" target="_blank" rel="author">Repositorio GitHub</a>
+            <p>parar</p>
+        </li></em></strong>
+        <strong><em><li><a class="linksexternos" href="https://www.youtube.com/watch?v=FM7MFYoylVs&list=RDdvgZkm1xWPE&index=6" target="_next" rel="author">Canal do Youtube</a></li></em></strong>
+        <strong><em><li><a class="linksexternos especial" href="https://www.cursoemvideo.com/" target="_next" rel="author">Site do curso em video</a></li></em></strong>
+    </ul>
+    <p><a href="index.html" rel="prev"><em><strong>voltar para a pagina inicial</strong></em></a></p>
+</body>
+</html>

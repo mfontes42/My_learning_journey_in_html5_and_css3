@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="css3.ico" type="image/x-ico">
+    <title>Familias de fontes externas</title>
+    <style>
+        @font-face {
+            font-family: 'London';
+            src: url('old_london/OldLondon.otf') format(opentype), url('old_london/OldLondon.ttf') format(truetype);
+            /*
+                Tipos de format():
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (apple advanced rtypografy)
+                - svg
+            */
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            font-weight: 600;
+            color: black;
+        }
+        h1, h2{
+            font-family: 'London', Times, serif;
+            font-size: 2em;
+            font-weight: normal;
+        }
+        /*normalmente em um site se tem entre 3 a 4 familias de fontes, nao se deve exagerar muito na quantidade de fontes no nosso site*/
+    </style>
+</head>
+<body>
+    <h1>Titulo 1 - Usando fontes baixadas</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae unde dolores, doloribus nostrum sint aut sequi! Et, est quia excepturi laudantium eveniet perspiciatis consequatur beatae odit pariatur, quas, quos cum.</p>
+    <h2>Subtitulo</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus quibusdam quisquam dignissimos doloribus rem sed est facilis cupiditate obcaecati, debitis id quos corrupti eum soluta esse! Voluptate, repudiandae sed? Repellendus?</p>
+</body>
+</html>

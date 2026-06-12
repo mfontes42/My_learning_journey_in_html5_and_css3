@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.linksexternos {
+    color: rgb(0, 149, 255);
+    text-decoration: none;
+}
