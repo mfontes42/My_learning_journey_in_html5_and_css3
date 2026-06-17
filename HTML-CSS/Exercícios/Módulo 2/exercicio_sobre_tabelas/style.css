@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+table, tr, td, caption {
+    border: 2px solid black;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 5px;
+}

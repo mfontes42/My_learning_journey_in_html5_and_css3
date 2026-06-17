@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <caption>My daily schedule</caption>
+        <thead> <!--table head (seccao cabeca da tabela)-->
+        <tr>
+            <th>Time</th> <!--table header (cabecalho da tabela)-->
+            <th>Activity</th>
+        </tr>
+        </thead>
+        <tbody> <!--table body (seccao corpo da tabela)-->
+        <tr> <!--table row (linhas da tabela)-->
+            <td> <!--table data (dados da tabela)-->
+                <time datetime="08:00">8am</time> - <time datetime="12:00">12am</time>
+            </td>
+            <td>Write code</td>
+        </tr>
+        <tr>
+            <td> <!--table data-->
+                <time datetime="12:15">12am</time> - <time datetime="03:00">3am</time>
+            </td>
+            <td>Study HTML</td>
+        </tr>
+        <tr>
+            <td> <!--table data-->
+                <time datetime="03:15">3pm</time> - <time datetime="06:00">6pm</time>
+            </td>
+            <td>Study common core projects</td>
+        </tr>
+        <tr>
+            <td rowspan="2">All other times</td>
+            <td>Free Time</td>
+        </tr>
+        <tr>
+            <td>Sleep</td>
+        </tr>
+        </tbody>
+        <tfoot> <!--table foot (seccao rodape da tabela)-->
+            <tr>
+                <td colspan="2">And that's what I do every day, 5 days a week. Just eat, sleep and study!</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
