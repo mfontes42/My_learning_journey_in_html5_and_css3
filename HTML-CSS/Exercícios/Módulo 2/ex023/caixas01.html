@@ -5,8 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="css3.ico" type="image/x-icon">
     <title>Modelo de caixas</title>
+    <style>
+        h1 {
+            background-color: lightslategray;
+            height: 300px;
+            width: 300px;
+            
+            border: 10px solid blue;
+
+            padding: 10px;
+
+            margin: 20px 20px 40px 20px;
+            /*Para centralizar caixas usa-se margin: auto;*/
+
+            outline-width: 5px dashed orangered;
+        }
+        a {
+            border-width: 10px solid red;
+        }
+    </style>
 </head>
 <body>
-    <h1>Exemplo de caixa box-level</h1>
+    <h1>Exemplo de caixa block-level</h1>
+    <p>Os paragrafos tambem sao exemplos de caixas block-level, mas os <a href="#">links sao exemplos de caixa inline-level</a>. Vamos ver como tudo isso funciona.</p>
 </body>
 </html>

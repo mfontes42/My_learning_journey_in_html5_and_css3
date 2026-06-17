@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+}
+header {
+    background-color: lightslategrey;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+}
+h1, h2 {
+    text-align: center;
+    margin: 0px;
+    box-shadow: 2px 2px 5px black;
+}
+.linksnav {
+    text-decoration: none;
+    margin-right: 5px;
+}
+nav {
+    margin: 30px;
+}
+main {
+    background-color: lightslategrey;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+
+}
+article {
+        text-align: justify;
+        cursor: pointer;
+}
+article > aside {
+    display: none;
+}
+article:hover > aside {
+    display: block;
+    color: blue;
+}
+article > p {
+    margin-top: 30px;
+}
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 1px;
+    margin: 0px;
+}
+footer > p {
+    margin: 0px;
+}
+#dev {
+    text-decoration: none;
+    color: white;
+}
+#bola {
+    background-color: aqua;
+    margin: 20px;
+    border-radius: 999px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
