@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-table, tr, td, caption {
+table, tr, td, th {
     border: 2px solid black;
     font-family: 'Courier New', Courier, monospace;
     border-collapse: collapse;
