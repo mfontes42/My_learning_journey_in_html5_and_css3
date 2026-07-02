@@ -45,7 +45,7 @@ p {
 
 header {
     background-image: linear-gradient(to bottom, var(--cor5), var(--cor6));
-    height: 150px;
+    height: 200px;
 }
 
 header > h1 {
@@ -55,35 +55,42 @@ header > h1 {
     padding: auto;
     font-family: var(--fonte-destaque);
     font-size: 3em;
+    font-weight: normal;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.396);
 }
+
 header > p {
     color: white;
     max-width: 700px;
+    margin-bottom: 30px;
     margin: auto;
     text-align: center;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.396);
 }
+
 nav {
     background-color: var(--cor6);
     box-shadow: 0px 7px 9px 0px rgba(0, 0, 0, 0.444);
 
 }
+
 nav > a {
-    padding: 10px;
+    padding: 5px;
     text-decoration: none;
-    color: white;
+    color: var(--cor1);
     font-weight: bold;
     display: inline-block;
 
 }
+
 nav > a:hover {
     background-color: var(--cor4);
     color: var(--cor6);
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     transition-duration: 0.5s;
 }
+
 main {
     background-color: white;
     min-width: 300px;
@@ -91,48 +98,73 @@ main {
     padding: 20px;
     margin: auto;
     box-shadow: 0px 0px 10px black;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 main p {
     text-align: justify;
     text-indent: 25px;
-    line-height: 1.6em;
+    line-height: 1.6em; /*distancia entre linhas */
 }
 
 main strong {
-    color: var(--cor5);
-}
-
-main > h1 {
-    color: var(--cor5);
+    color: var(--cor4);
 }
 
 img {
     width: 100%;
 }
+
 .pequena {
     max-width: 350px;
-    margin: auto; /* margin auto e display block para centralizar a imagem */
+    margin: auto;
+    /* margin auto e display block para centralizar a imagem */
     display: block;
 }
-article > h1 {
+
+.linksexternos {
+    text-decoration: none;
+    font-weight: bolder;
     color: var(--cor5);
+}
+
+.linksexternos::after {
+    content: '\1F517';
+}
+
+.video {
+    background-color: #063d1e;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+
+.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 article > h1, h2 {
     font-family: 'Android';
+    font-weight: normal;
 }
 
 article > h2 {
     font-family: 'Android';
+    font-size: 1.2em;
     color: var(--cor5);
-    background-image: linear-gradient(to right, #83e1ad8d, #83e1ad00)
+    background-image: linear-gradient(to right, var(--cor2), transparent); /*o gradiente vai da cor2 ate a sua transparencia*/
+    text-indent: 8px;
 }
 
 article > h1 {
     color: black;
 }
+
 footer {
     background-color: var(--cor6);
     color: rgba(255, 255, 255, 0.82);
@@ -142,20 +174,35 @@ footer {
     margin-top: 25px;
 
 }
+
 footer > a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
 
+footer > a:hover {
+    text-decoration: underline;
+    color: var(--cor2);
+}
+
 aside {
     background-color: rgb(197, 235, 214);
     border-radius: 10px;
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.574);
 }
+
 aside > h3 {
-    background-color: rgb(47, 168, 102);
+    background-color: var(--cor5);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     color: white;
-    padding-left: 5px;
+    padding: 5px;
+}
+
+aside ul {
+    list-style: inside;
+    list-style-type: '\2714\00A0\00A0';
+    /*para coloca-se dentro de aspas simples o codigo do emoji para o tipo da lista com una barra invertida antes. As barras a seguir com 00A0 significam espaco */
+    columns: 2;
 }
