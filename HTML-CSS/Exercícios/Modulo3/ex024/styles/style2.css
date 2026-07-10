@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/*
+    podemos colocar imagens de fundo externas passando o link referente ao seu caminho.
+    quando usamos a imagem de fundo com o background-image, se a imagem for menor que a largura da div em que ela for inserida, ela vai se repetindo automaticamente ate preencher toda a div.
+    a imagem sempre sera carregada no tamanho padrao, a nao ser, que se coloque um background-size.  e por padrao a imagem comeca ou aparece sempre no canto superior esquerdo, mas e possivel alterar este ponto de partida
+*/
+
+body {
+    /*
+       
+    */
+    background-image: url('https:mfontes42.github.io/A_Simple_Site_About_Android_History/images/dan-droids-pq.png');
+
+    background-size: 100px 100px; /*modificar o tamanho da imagem de fundo*/
+    background-repeat: no-repeat;
+}
