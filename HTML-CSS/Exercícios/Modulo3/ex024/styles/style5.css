@@ -1,9 +1,36 @@
 @charset "UTF-8";
 
 body {
-    height: 98vh;
-    background-image: url('../imagens/wallpaper002.jpg');
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: 100% 270px;
+    /*shorthand - bacground
+        color > image > position > repeat > [size] > attachment
+
+        o background-size deve se fazer aparte porque nao funciona na shorthand
+    */
+    background: black url('../imagens/wallpaper002.jpg') top center no-repeat fixed;
+    background-size: cover;
+}
+
+main {
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    min-height: 100px;
+    /*
+        height: use quando você quer uma altura exata (como um botão, um cabeçalho ou um card).
+        min-height: use quando o elemento precisa poder crescer conforme o conteúdo.
+        Sem height: para a maioria dos elementos (div, main, section, etc.), deixe o navegador calcular a altura automaticamente.
+    */
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+main > h1 {
+    text-align: center;
+}
+
+main > p {
+    text-indent: 30px;
+    text-align: justify;
 }
