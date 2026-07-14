@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/*
+    o conteiner, que e a div que vai conter a subdiv, deve ser sempre ter a position: relative.
+
+    e o content que e a subdiv,ou conteudo do conteiner, deve ter sempre position: absolute.
+    quando se coloca um posicionamento absoluto em um elemento, pode se configurar as propriedades left e top, que sao os principios que vao noss ajudar a posicionar a nossa imagem verticalmente.
+*/
+
+#conteiner {
+    background-image: url(../imagens/target001.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: pink;
+    height: 600px;
+    padding: 15px;
+}
+
+#content {
+    background-image: url(../imagens/target001.png);
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%; /*distancia da esquerda do conteiner ate ao canto superior esquerdo do content*/
+    top: 50%; /*distancia do topo do conteiner ate ao canto superior esquerdo do content*/
+    background-color: rgb(103, 102, 102);
+    width: 600px;
+    height: 300px;
+    transform: translate(-300px, -150px);
+    
+    /*Algo importante que eu acabei de verificar agora e que para centralizarmos o content dentro do conteiner, no translate nos vamos passar a metade da largra do content e a metade da altura do content!!*/
+}
