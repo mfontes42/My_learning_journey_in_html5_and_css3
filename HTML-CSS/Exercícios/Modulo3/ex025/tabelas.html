@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em HTML</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 400px;
+            border-collapse: collapse; /*para unir as linhas, por padrao sao separadas*/
+            border: 5px solid pink;
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .linha {
+            background-color: aqua;
+        }
+        .dado {
+            background-color: yellow;
+        }
+        #tab2 {
+            width: 400px;
+            height: 400px;
+        }
+        #tab2 td {
+            text-align: center; /*alinhamento horizontal, left(padrao), right e center*/
+            vertical-align: middle; /*alinhamento vertical, middle, top e bottom*/
+        }
+        .numero {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+        --Hierarquia de tabelas--
+        Tabela simples:
+        <table> —> tabela
+            <tr> —> linha da tabela
+                <th> —> cabecalho da tabela
+                <td> —> dados da tabela
+    -->
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="linha">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td class="numero">399</td>
+        </tr>
+        <tr>
+            <td class="dado">A4</td>
+            <td>B4</td>
+            <td class="numero">047</td>
+        </tr>
+    </table>
+    <hr>
+    <h1>Tabela 2</h1>
+    <table id="tab2">
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+</body>
+</html>
