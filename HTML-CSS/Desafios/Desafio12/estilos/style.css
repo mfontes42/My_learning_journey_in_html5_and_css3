@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: black;
+    min-height: 200px;
+}
+
+header > h1 {
+    margin: 0px;
+    text-align: center;
+    font-size: 10vw;
+    font-weight: bold;
+    font-variant: small-caps;
+    padding-top: 50px;
+}
+
+header > p {
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 0px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: 'Passion One', sans-serif;
+    color: white;
+}
+
+main  p {
+    font-family: 'Sriracha', sans-serif;
+    padding-left: 15px;
+    font-size: 3vw;
+    line-height: 5vw;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+#girassol {
+    background-image: url('../imagens/girassol.jpg');
+}
+
+#livro {
+    background-image: url('../imagens/pages.jpg');
+}
+#girassol, #livro {
+    min-height: 600px;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    box-shadow: 2px -4px 20px rgba(0, 0, 0, 0.4);
+}
+
+#girassol > p, #livro > p {
+    display: inline-block;
+    background-color: rgba(22, 21, 21, 0.553);
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    color: white;
+    text-shadow: 1px 2px 1px black;
+    padding: 10px;
+    font-size: 2em;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+footer > a {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+footer > a:hover {
+    text-decoration: underline;
+}
