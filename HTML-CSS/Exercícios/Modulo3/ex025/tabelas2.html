@@ -6,19 +6,34 @@
     <title>Tabelas grandes</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
+        caption {
+            padding: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgray;
+        }
         table {
-            border-top: 2px solid black;
-            border-bottom: 2px solid black;
+            border: 1px solid black;
             border-collapse: collapse;
             width: 400px;
         }
-        thead, tfoot,tfoot td {
+        thead, thead th, tfoot,tfoot td {
             border: 1px solid black;
             background-color: rgb(142, 154, 168);
             color: white;
         }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(142, 154, 168);;
+        }
+        tbody > tr:nth-child(2n) {  /*este pseudocodigo vai permitir fazer alteracoes em linhas alternadamente de acordo ao valor que passarmos a funcao*/
+            background-color: aqua; 
+        }
+        tbody > tr:nth-child(2n-1) {
+            background-color: greenyellow; 
+        }
         td {
-            background-color: rgb(236, 234, 234);
             border: 1px solid black;
             padding: 8px;
             text-align: center;
@@ -30,13 +45,165 @@
 </head>
 <body>
     <table>
+        <caption>Populacao por estado</caption> <!--o caption e a legenda da tabela-->
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Populacao</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">Populacao</th>
             </tr>
         </thead>
         <tbody>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">45.99902</td>
+            </tr>
+            <tr>
+                <td>Minas gerais</td>
+                <td class="num">21.9038</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.74233</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.78469</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td class="num">89.98456</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">45.99902</td>
+            </tr>
+            <tr>
+                <td>Minas gerais</td>
+                <td class="num">21.9038</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.74233</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.78469</td>
+            </tr>
+            <tr>
+                <td>Minas gerais</td>
+                <td class="num">21.9038</td>
+            </tr>
+            <tr>
+                <td>Minas gerais</td>
+                <td class="num">21.9038</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.74233</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.78469</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td class="num">89.98456</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">45.99902</td>
+            </tr>
+            <tr>
+                <td>Minas gerais</td>
+                <td class="num">21.9038</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.74233</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.78469</td>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.78469</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td class="num">89.98456</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">45.99902</td>
+            </tr>
+            <tr>
+                <td>Minas gerais</td>
+                <td class="num">21.9038</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.74233</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.78469</td>
+            </tr>
+            <tr>
+                <td>Minas gerais</td>
+                <td class="num">21.9038</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.74233</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.78469</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td class="num">89.98456</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">45.99902</td>
+            </tr>
+            <tr>
+                <td>Minas gerais</td>
+                <td class="num">21.9038</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.74233</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.78469</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td class="num">89.98456</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">45.99902</td>
+            </tr>
+            <tr>
+                <td>Minas gerais</td>
+                <td class="num">21.9038</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.74233</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.78469</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td class="num">89.98456</td>
+            </tr>
             <tr>
                 <td>Sao Paulo</td>
                 <td class="num">45.99902</td>
@@ -75,9 +242,17 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Total de habitantes</th>
+            <th scope="row">Total de habitantes</th>
             <td class="num"><strong>32887656887</strong></td>
         </tfoot>
     </table>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptates rem illum, porro, amet maiores necessitatibus sequi deserunt ratione ex quidem provident cupiditate alias non unde. Qui explicabo vel ratione? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eos nostrum in consequatur non, error, atque autem, temporibus facere numquam optio. Labore expedita alias esse suscipit quam. Tempore, beatae eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi odio omnis ipsam dolor, consequuntur magnam quidem temporibus facere atque dolorem eos, deleniti doloremque, voluptates natus quo sit. Incidunt, debitis modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repudiandae, soluta, voluptas ducimus quasi tenetur sit error dolores placeat ratione quisquam aspernatur inventore numquam veritatis recusandae. Voluptatem voluptate deserunt libero?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptates rem illum, porro, amet maiores necessitatibus sequi deserunt ratione ex quidem provident cupiditate alias non unde. Qui explicabo vel ratione? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eos nostrum in consequatur non, error, atque autem, temporibus facere numquam optio. Labore expedita alias esse suscipit quam. Tempore, beatae eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi odio omnis ipsam dolor, consequuntur magnam quidem temporibus facere atque dolorem eos, deleniti doloremque, voluptates natus quo sit. Incidunt, debitis modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repudiandae, soluta, voluptas ducimus quasi tenetur sit error dolores placeat ratione quisquam aspernatur inventore numquam veritatis recusandae. Voluptatem voluptate deserunt libero?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptates rem illum, porro, amet maiores necessitatibus sequi deserunt ratione ex quidem provident cupiditate alias non unde. Qui explicabo vel ratione? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eos nostrum in consequatur non, error, atque autem, temporibus facere numquam optio. Labore expedita alias esse suscipit quam. Tempore, beatae eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi odio omnis ipsam dolor, consequuntur magnam quidem temporibus facere atque dolorem eos, deleniti doloremque, voluptates natus quo sit. Incidunt, debitis modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repudiandae, soluta, voluptas ducimus quasi tenetur sit error dolores placeat ratione quisquam aspernatur inventore numquam veritatis recusandae. Voluptatem voluptate deserunt libero?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptates rem illum, porro, amet maiores necessitatibus sequi deserunt ratione ex quidem provident cupiditate alias non unde. Qui explicabo vel ratione? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eos nostrum in consequatur non, error, atque autem, temporibus facere numquam optio. Labore expedita alias esse suscipit quam. Tempore, beatae eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi odio omnis ipsam dolor, consequuntur magnam quidem temporibus facere atque dolorem eos, deleniti doloremque, voluptates natus quo sit. Incidunt, debitis modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repudiandae, soluta, voluptas ducimus quasi tenetur sit error dolores placeat ratione quisquam aspernatur inventore numquam veritatis recusandae. Voluptatem voluptate deserunt libero?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptates rem illum, porro, amet maiores necessitatibus sequi deserunt ratione ex quidem provident cupiditate alias non unde. Qui explicabo vel ratione? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eos nostrum in consequatur non, error, atque autem, temporibus facere numquam optio. Labore expedita alias esse suscipit quam. Tempore, beatae eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi odio omnis ipsam dolor, consequuntur magnam quidem temporibus facere atque dolorem eos, deleniti doloremque, voluptates natus quo sit. Incidunt, debitis modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repudiandae, soluta, voluptas ducimus quasi tenetur sit error dolores placeat ratione quisquam aspernatur inventore numquam veritatis recusandae. Voluptatem voluptate deserunt libero?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptates rem illum, porro, amet maiores necessitatibus sequi deserunt ratione ex quidem provident cupiditate alias non unde. Qui explicabo vel ratione? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eos nostrum in consequatur non, error, atque autem, temporibus facere numquam optio. Labore expedita alias esse suscipit quam. Tempore, beatae eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi odio omnis ipsam dolor, consequuntur magnam quidem temporibus facere atque dolorem eos, deleniti doloremque, voluptates natus quo sit. Incidunt, debitis modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repudiandae, soluta, voluptas ducimus quasi tenetur sit error dolores placeat ratione quisquam aspernatur inventore numquam veritatis recusandae. Voluptatem voluptate deserunt libero?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptates rem illum, porro, amet maiores necessitatibus sequi deserunt ratione ex quidem provident cupiditate alias non unde. Qui explicabo vel ratione? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eos nostrum in consequatur non, error, atque autem, temporibus facere numquam optio. Labore expedita alias esse suscipit quam. Tempore, beatae eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi odio omnis ipsam dolor, consequuntur magnam quidem temporibus facere atque dolorem eos, deleniti doloremque, voluptates natus quo sit. Incidunt, debitis modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repudiandae, soluta, voluptas ducimus quasi tenetur sit error dolores placeat ratione quisquam aspernatur inventore numquam veritatis recusandae. Voluptatem voluptate deserunt libero?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptates rem illum, porro, amet maiores necessitatibus sequi deserunt ratione ex quidem provident cupiditate alias non unde. Qui explicabo vel ratione? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eos nostrum in consequatur non, error, atque autem, temporibus facere numquam optio. Labore expedita alias esse suscipit quam. Tempore, beatae eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi odio omnis ipsam dolor, consequuntur magnam quidem temporibus facere atque dolorem eos, deleniti doloremque, voluptates natus quo sit. Incidunt, debitis modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repudiandae, soluta, voluptas ducimus quasi tenetur sit error dolores placeat ratione quisquam aspernatur inventore numquam veritatis recusandae. Voluptatem voluptate deserunt libero?</p>
 </body>
 </html>

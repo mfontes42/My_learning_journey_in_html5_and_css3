@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<HTML lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tabelas</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-ico">
+        <style>
+            td {
+                border: 1px solid black;
+                width: 150px;
+                height: 20px;
+                text-align: center;
+                
+            }
+            table {
+                border-collapse: collapse;
+            }
+            thead {
+                border: 1px solid black;
+            }
+            thead th {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Mesclagem de celulas</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="3">Mesclagem de celulas</th>
+                </tr>
+            </thead>
+            <tr>
+                <td rowspan="2">1</td>
+                <td colspan="2">2</td> <!--a celula 2 vai ocupar duas colunas, para isso usamos a expansao de coluna 'colspan'-->
+                
+            </tr>
+            <tr>
+                <td>5</td>
+                <td rowspan="2">6</td>
+            </tr>
+            <tr>
+                <td rowspan="2">7</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                
+                <td>11</td>
+                <td>12</td>
+            </tr>
+        </table>
+    </body>
+</HTML>
