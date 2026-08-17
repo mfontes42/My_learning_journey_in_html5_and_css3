@@ -1,2 +1,36 @@
 @charset "UTF-8";
 
+
+table {
+    border-collapse: collapse;
+}
+caption {
+    font-weight: bold;
+}
+th {
+    border: 1px solid black;
+    width: 100px;
+    height: 25px;
+}
+
+td {
+    border: 1px solid black;
+    width: 100px;
+    height: 25px;
+}
+
+.cnome {
+    background-color: aqua;
+}
+
+.csexoEidade {
+    background-color: blueviolet;
+}
+
+.cidade {
+    background-color: palegreen;
+}
+
+.cprofissao {
+    background-color: pink;
+}

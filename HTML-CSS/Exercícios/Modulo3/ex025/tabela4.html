@@ -3,17 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio de tabelas</title>
-    <link rel="stylesheet" href="style5.css">
+    <title>Agrupando colunas com colgroup</title>
+    <link rel="stylesheet" href="style4.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <h1>Agrupando colunas com colgroup</h1>
     <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexoEidade" span="2">
+            <!--<col class="cidade">-->
+            <col class="cprofissao">
+        </colgroup>
         <caption>Cadastro</caption>
         <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissao</th>
+            </tr>
         </thead>
         <tbody>
-
+            <tr>
+                <td>Ana</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Paulo</td>
+                <td>M</td>
+                <td>22</td>
+                <td>ator</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>34</td>
+                <td>Professora</td>
+            </tr>
+            <tr>
+                <td>Joao</td>
+                <td>M</td>
+                <td>20</td>
+                <td>Cantor</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>M</td>
+                <td>26</td>
+                <td>Engenheiro</td>
+            </tr>
         </tbody>
     </table>
 </body>
