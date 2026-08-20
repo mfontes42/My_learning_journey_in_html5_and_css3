@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegacao no iframe</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        iframe {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid brown;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faca uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ullam quam tempore impedit obcaecati. Pariatur doloribus dolor perferendis. Accusantium at quo ipsam porro aperiam accusamus pariatur aliquid, a delectus id?</p>
+    <ul>
+        <li><a href="paginas_extra/pag001.html" rel="next" target="frame">Primeira pagina</a></li>
+        <li><a href="iframe001.html" target="frame">Segunda pagina</a></li>
+        <li><a href="iframe002.html" target="frame">Terceira pagina</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut similique veniam voluptatum debitis recusandae iusto eos ipsa inventore quam, quidem reiciendis, ratione sapiente. Quia debitis aliquid blanditiis iste, vel nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae ea a quibusdam quisquam hic necessitatibus natus itaque cupiditate. Neque dolore nisi vel ab praesentium reiciendis explicabo dolorum, non est architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia reprehenderit quo placeat quam tenetur deleniti quaerat! Illum, molestiae consequuntur. Aliquid hic rem earum magnam officia quibusdam, laborum rerum ex similique. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quos voluptatem incidunt reprehenderit harum quia tempora esse atque neque cumque, sunt voluptate consequuntur modi ducimus, quis quae! Officia, sunt in.</p>
+
+    <iframe name="frame" srcdoc="<h1>Escolha uma das opcoes acima</h1><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, voluptatibus suscipit accusantium totam earum aspernatur deleniti aliquid ipsum dolorum, adipisci optio molestiae cumque. In ipsum et deserunt esse rem natus!</p><img src='favicon.ico' alt='imagem do simbolo do html' width='300px' height='250px'>"> <!--usando o srcdoc podemos criar meio que um html pontualmente dentro da iframe. tudo na mesma linha. Mas o mais aconselhavel mesmo e criar um arquivo sparado e chamar dentro do iframe com src.-->
+        <p>Infelizmente o seu navegador nao e compativel</p>
+    </iframe>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis quidem cum ea vel atque eum, eaque minus consequuntur officia sit, accusamus aut doloremque architecto quae nostrum amet recusandae quasi quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa iure, amet quaerat et repellat magnam sequi, aliquam incidunt eligendi, ea blanditiis error hic dolorem a aut expedita optio totam!</p>
+</body>
+</html>
