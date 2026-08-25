@@ -45,3 +45,11 @@ main {
     top: 5%;
     left: 85%;
 }
+
+#tela {
+    position: relative;
+    top: 11%;
+    left: 6.9%;
+    width: 264.5px;
+    height: 480px;
+}
