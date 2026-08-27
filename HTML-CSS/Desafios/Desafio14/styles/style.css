@@ -37,14 +37,22 @@ main {
 }
 
 #redes-sociais {
-    width: 100px;
-    height: 700px;
-    background-color: yellowgreen;
-    border: 2px solid black;
-    position: absolute;
-    top: 5%;
-    left: 85%;
+    text-align: right;
 }
+
+#redes-sociais img {
+    width: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.587);
+    box-sizing: border-box;
+}
+
+#redes-sociais img:hover {
+    border: 2px solid white;
+    box-shadow: 5px 5px 10px black;
+}
+
 
 #tela {
     position: relative;
